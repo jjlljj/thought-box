@@ -6,6 +6,7 @@ export const ThoughtCard = ({ card }) => {
     <div className="thought-card">
       <h2>{title}</h2>
       <p>{body}</p>
+      <button>delete</button>
     </div>
   )
 }
