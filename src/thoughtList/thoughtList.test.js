@@ -15,7 +15,7 @@ describe('ThoughtList', () => {
       { title: 'blah', body: 'blah' },
       { title: 'blah', body: 'blah' },
       { title: 'blah', body: 'blah' } ]
-    const renderedContent = mount(<ThoughtList thoughtList={ mockCards } />)
+    const renderedContent = shallow(<ThoughtList thoughtList={ mockCards } />)
 
     expect(renderedContent.find('.thought-card').length).toEqual(3)  
   });
